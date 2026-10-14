@@ -1,0 +1,11 @@
+.caixa-login {
+    max-width: 400px;
+}
+
+.card-filme {
+    cursor: pointer;
+}
+
+.card-filme:hover img {
+    opacity: 0.8;
+}

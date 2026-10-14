@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar - Meus Filmes</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+    <div class="container py-5 caixa-login">
+        <h1 class="text-center mb-4">Meus Filmes</h1>
+
+        <!-- LOGIN  -->
+        <form id="form-login" onsubmit="entrar(event)">
+            <div class="mb-3">
+                <label for="login-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="login-email" placeholder="nome@exemplo.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="login-senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="login-senha" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Entrar</button>
+            <p class="text-center text-muted mt-3 mb-0">
+                Não tem conta?
+                <button type="button" class="btn btn-link p-0 align-baseline" onclick="trocar()">Criar conta</button>
+            </p>
+        </form>
+
+        <!-- CADASTRO  -->
+        <form id="form-cadastro" class="d-none" onsubmit="cadastrar(event)">
+            <div class="mb-3">
+                <label for="cad-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="cad-email" placeholder="nome@exemplo.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="cad-senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="cad-senha" placeholder="Crie uma senha" minlength="4" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Cadastrar</button>
+            <p class="text-center text-muted mt-3 mb-0">
+                Já tem conta?
+                <button type="button" class="btn btn-link p-0 align-baseline" onclick="trocar()">Entrar</button>
+            </p>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
